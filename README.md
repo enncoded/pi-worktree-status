@@ -4,7 +4,7 @@ A [Pi](https://github.com/earendil-works/pi-coding-agent) extension that ties ea
 session that created it. A session claims a worktree by running `wt switch ... --format=json` in `bash`, and the
 widget, the session name on the branch, and `/worktrees` all read that claim.
 
-It adds no sessions, no workspaces, and it does not change your worktree layout.
+It doesn't add sessions,  workspaces, or change your worktree layout.
 
 ## What it does
 
