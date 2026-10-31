@@ -1,0 +1,47 @@
+{
+  "name": "pi-worktrunk",
+  "version": "0.1.0",
+  "description": "Pi extension that makes each Worktrunk worktree belong to the Pi session that created it, with a live branch/status widget and a /worktrees command",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-extension",
+    "worktrunk",
+    "wt",
+    "worktree",
+    "git-worktree"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enncoded/pi-worktrunk.git"
+  },
+  "homepage": "https://github.com/enncoded/pi-worktrunk#readme",
+  "bugs": {
+    "url": "https://github.com/enncoded/pi-worktrunk/issues"
+  },
+  "pi": {
+    "extensions": ["./extensions/worktrunk-owned.ts"]
+  },
+  "files": [
+    "extensions/worktrunk-owned.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test \"test/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^1.2.0",
+    "@types/node": "^26.6.5",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "engines": {
+    "node": ">=22.18"
+  }
+}
