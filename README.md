@@ -1,10 +1,11 @@
-# pi-worktrunk
+# pi-worktree-status
 
 A [Pi](https://github.com/earendil-works/pi-coding-agent) extension that ties each Worktrunk worktree to the Pi
 session that created it. A session claims a worktree by running `wt switch ... --format=json` in `bash`, and the
 widget, the session name on the branch, and `/worktrees` all read that claim.
 
-It doesn't add sessions,  workspaces, or change your worktree layout.
+It doesn't add sessions, workspaces, or change your worktree layout. It also creates nothing: the worktree
+already exists by the time the extension sees the `wt switch` output.
 
 ## What it does
 
@@ -33,13 +34,13 @@ worktree, and it draws Worktrunk's symbols in the widget. Both can be installed 
 ## Install
 
 ```bash
-pi install git:github.com/enncoded/pi-worktrunk
+pi install git:github.com/enncoded/pi-worktree-status
 ```
 
 For a single run:
 
 ```bash
-pi -e git:github.com/enncoded/pi-worktrunk
+pi -e git:github.com/enncoded/pi-worktree-status
 ```
 
 You need `wt` (Worktrunk) and `git` on `PATH`.
