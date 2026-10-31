@@ -36,13 +36,19 @@ which worktree. It also includes Worktrunk's symbols in the widget line. Both ca
 ## Install
 
 ```bash
+pi install npm:pi-worktree-status
+```
+
+From git instead:
+
+```bash
 pi install git:github.com/enncoded/pi-worktree-status
 ```
 
 For a single run:
 
 ```bash
-pi -e git:github.com/enncoded/pi-worktree-status
+pi -e npm:pi-worktree-status
 ```
 
 You need `wt` (Worktrunk) and `git` on `PATH`.
