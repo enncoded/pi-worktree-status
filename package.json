@@ -1,7 +1,7 @@
 {
   "name": "pi-worktree-status",
-  "version": "0.1.0",
-  "description": "Pi extension that makes each Worktrunk worktree belong to the Pi session that created it, with a live branch/status widget and a /worktrees command",
+  "version": "0.1.1",
+  "description": "Pi extension that shows the Worktrunk worktrees a Pi session is using, with each branch's status and the owning session",
   "keywords": [
     "pi-package",
     "pi",
